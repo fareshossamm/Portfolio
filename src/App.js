@@ -21,7 +21,6 @@ function App() {
     });
   }, []);
 
-  // Custom hook to handle scroll to top on route change
   function ScrollToTopOnRouteChange() {
     const location = useLocation();
 

@@ -3,8 +3,8 @@
 .about-container {
   display: flex;
   justify-content: space-between;
-  padding: 100px 40px;
-  height: auto;
+  padding: 120px 40px;
+  height: 100vh;
   background: #1e1e1e;
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -136,9 +136,12 @@ h2 {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
+
+  
   .about-container {
     flex-direction: column;
     padding: 20px;
+    height: auto;
   }
 
   .left-pane,
