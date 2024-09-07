@@ -6,7 +6,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import heroImage from "./imgs/me.jpg"; // Update with your image path
+import heroImage from "./imgs/me.webp"; // Update with your image path
 
 const Hero = () => {
   useEffect(() => {

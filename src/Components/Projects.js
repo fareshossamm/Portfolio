@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 import './Projects.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import img1 from './imgs/cerca.png';
-import img2 from './imgs/organick.png';
-import img3 from './imgs/e learning.jpeg'; 
-import img4 from './imgs/Quiz.png'; 
-import img5 from './imgs/medical.png'; 
-import img6 from './imgs/alwalaa.png'; 
-import img7 from './imgs/lumicare2.png'; 
-import img8 from './imgs/landing laptop.png'; 
-import img9 from './imgs/file cover - 1.png'; 
-import img10 from './imgs/CRUD 1.png'; 
-import img11 from './imgs/fetch.png' ; 
+import img1 from './imgs/cerca.webp';
+import img2 from './imgs/organick.webp';
+import img3 from './imgs/e learning.webp'; 
+import img4 from './imgs/Quiz.webp'; 
+import img5 from './imgs/medical.webp'; 
+import img6 from './imgs/alwalaa.webp'; 
+import img7 from './imgs/lumicare2.webp'; 
+import img8 from './imgs/landing laptop.webp'; 
+import img9 from './imgs/file cover - 1.webp'; 
+import img10 from './imgs/CRUD-1.webp'; 
+import img11 from './imgs/fetch.webp' ; 
 
 const projects = [
   { id: 1, title: 'Cerca', imageUrl: img1, category: 'Frontend' },
