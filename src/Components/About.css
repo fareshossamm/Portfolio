@@ -3,7 +3,7 @@
 .about-container {
   display: flex;
   justify-content: space-between;
-  padding: 100px 40px  ;
+  padding: 100px 40px;
   height: auto;
   background: #1e1e1e;
   color: white;
@@ -12,7 +12,6 @@
 
 .left-pane {
   width: 30%;
-  height: auto;
   background: #181f30;
   color: #ffffff;
   padding: 20px;
@@ -80,12 +79,12 @@
   font-size: 20px;
   color: #ffffff;
   border-radius: 10px;
-  transition:  0.5s;
+  transition: color 0.5s;
 }
 
 .nav li.active {
-  color: #ff6f4f; 
-  font-weight: bold; 
+  color: #ff6f4f;
+  font-weight: bold;
 }
 
 .nav .icon {
@@ -114,9 +113,6 @@ h2 {
   font-size: 28px;
 }
 
-
-
-
 .links-container {
   display: flex;
   gap: 20px;
@@ -143,8 +139,6 @@ h2 {
   .about-container {
     flex-direction: column;
     padding: 20px;
-    padding-top: 100px;
-    height: auto; 
   }
 
   .left-pane,
@@ -153,7 +147,7 @@ h2 {
   }
 
   .left-pane {
-    margin-bottom: 20px; /* Add margin-bottom for spacing */
+    margin-bottom: 20px;
   }
 
   .avatar {
@@ -182,16 +176,15 @@ h2 {
   }
 
   .skills-container {
-    flex-direction: column; /* Stack skills vertically */
+    flex-direction: column;
   }
 
   .skill-box {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 100%;
+    width: 100%;
   }
 
   .links-container {
-    flex-direction: column; /* Stack links vertically on smaller screens */
+    flex-direction: column;
     align-items: center;
   }
 
@@ -199,13 +192,13 @@ h2 {
     font-size: 30px;
   }
 }
+
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column;
-    padding: 20px;
     margin-top: 70px;
-    height: auto;
-  }}
+  }
+}
+
 @media (max-width: 480px) {
   .about-container {
     padding: 10px;
