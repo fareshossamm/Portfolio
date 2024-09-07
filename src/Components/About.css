@@ -3,9 +3,8 @@
 .about-container {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
-  padding-top: 120px;
-  height: 100vh;
+  padding: 100px 40px  ;
+  height: auto;
   background: #1e1e1e;
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
