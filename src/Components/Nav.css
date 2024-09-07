@@ -1,0 +1,34 @@
+/* src/components/Nav.css */
+
+.logo {
+    width: 100px;
+  }
+  
+  .navbar {
+    background-color: #1e1e1e;
+  }
+  
+  .navbar .nav-link {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ff6f4f;
+  }
+  
+  .navbar .nav-link.active {
+    color: #ff6f4f; /* Black color for active link */
+  }
+  @media (max-width: 992px) {
+    .navbar .nav-link {
+      padding-left: 25px;
+    }
+    .navbar-toggler{
+      background:white;
+    }
+   
+  }

@@ -1,0 +1,128 @@
+/* Base styles for the services section */
+.services-section {
+    background: #1e1e1e;
+    color: #333;
+    padding-top: 120px; /* Spacing from the top */
+    padding-bottom: 90px; /* Spacing from the bottom */
+}
+
+/* Title styling */
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    color: #ff6f4f;
+}
+
+/* Grid layout for service cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row on larger screens */
+    gap: 30px; /* Space between cards */
+    align-items: stretch; /* Ensure all cards are the same height */
+}
+
+/* Service card styling */
+.service-card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #de6f53;
+    z-index: 0;
+    transition: width 0.7s, height 0.7s;
+    border-radius: 12px;
+}
+
+.service-card:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Slight upward movement on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.service-card:hover .service-icon, 
+.service-card:hover .service-title, 
+.service-card:hover .service-description {
+    color: #fff;
+}
+
+/* Icon styling */
+.service-icon {
+    font-size: 40px;
+    color: #ff6f4f; 
+    margin-bottom: 20px;
+    z-index: 1;
+    transition: color 0.5s;
+    position: relative;
+}
+
+/* Title styling within card */
+.service-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    z-index: 1;
+    transition: color 0.4s ease;
+    position: relative;
+}
+
+/* Description styling within card */
+.service-description {
+    font-size: 16px;
+    color: #666;
+    z-index: 1;
+    transition: color 0.4s ease;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 boxes per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding-top: 80px; /* Adjust top padding for smaller screens */
+        padding-bottom: 50px; /* Ensure bottom padding is consistent */
+    }
+
+    .section-title {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* 1 box per row on small screens */
+    }
+
+    .service-title {
+        font-size: 20px; /* Adjust title font size */
+    }
+
+    .service-description {
+        font-size: 14px; /* Adjust description font size */
+    }
+}

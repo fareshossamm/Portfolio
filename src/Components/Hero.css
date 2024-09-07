@@ -1,0 +1,178 @@
+.hero-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #1e1e1e; /* Background color */
+    color: #ffffff; /* Text color */
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize; /* Capitalize text */
+    text-align: center; /* Center text inside the section */
+}
+
+.hero-section > * {
+    /* Ensures all direct children of .hero-section are centered */
+    margin: 0;
+}
+
+.hero-content {
+    z-index: 2;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 2.5rem; /* Adjusted for responsiveness */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 3rem; /* Adjusted for responsiveness */
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.job {
+    font-size: 2rem; /* Adjusted for responsiveness */
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.hero-subtitle .highlight {
+    color: #ff7e5f;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; 
+    margin-top: 1.5rem;
+}
+
+.hero-button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 20px; 
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition:  0.5s; 
+    gap: 10px; 
+  }
+  
+  .button-icon {
+    font-size:20px; /* Size of the icon */
+  }
+  
+.hero-button:hover{
+    color: #ff6f4f; 
+    background-color: #ffffff;
+  }
+  
+.icon-spacing {
+    margin-left: 10px; /* Adjust space as needed */
+}
+
+
+.hero-img-container {
+    position: relative;
+    z-index: 2;
+    text-align: center; /* Center image container on mobile */
+}
+
+.hero-image {
+    max-width: 50%; 
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    margin-top: 50px;
+}
+.links-container {
+margin-top: 40px;
+}
+@keyframes rotateShape {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.wave-icon {
+    display: inline-block;
+    font-size: 2.8rem; /* Larger emoji for emphasis */
+    animation: wave 2s infinite;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+@media (max-width: 992px) {
+.hero-img-container {
+    display: none;
+}
+.hero-section {
+    text-align: center;
+    flex-direction: column;
+    padding: 190px 1rem 180px 1rem; 
+    height: auto;
+}
+}
+@media (max-width: 768px) {
+
+
+    .hero-title {
+        font-size: 28px;
+    }
+    .wave-icon{
+        font-size: 35px;
+    }
+    
+    .name {
+        font-size: 30px; 
+        font-weight: 700;
+       
+    }
+
+    .job {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+    }
+
+   
+
+    .hero-button {
+        font-size:20px;
+        font-weight: 600;
+    }
+    .hero-content {
+        z-index: 2;
+        text-align: center;
+    }
+    .btns{
+align-items: center;
+justify-content: center;
+    }
+    .btn a{
+        max-width: 100%;
+
+    }
+   
+      .contact{
+        padding-left:55px;
+        padding-right:55px;
+      }
+}
