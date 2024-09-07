@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './Components/Nav';
 import Hero from './Components/Hero';
 import About from './Components/About';
@@ -21,8 +21,20 @@ function App() {
     });
   }, []);
 
+  // Custom hook to handle scroll to top on route change
+  function ScrollToTopOnRouteChange() {
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+
+    return null;
+  }
+
   return (
     <Router>
+      <ScrollToTopOnRouteChange /> {/* Inline scroll-to-top effect */}
       <Navbar />
       <Routes>
         <Route

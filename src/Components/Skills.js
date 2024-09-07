@@ -31,11 +31,11 @@ const Skills = () => {
 
   return (
     <section className="skills-section">
-      <div className="skills-content-section" data-aos="fade-down">
+      <div className="skills-content-section" data-aos="fade-up">
         <h2 className="skills-title">Skills</h2>
-        <div className="skills-container" data-aos="fade-down">
+        <div className="skills-container" data-aos="fade-up">
           {skillsData.map((skill, index) => (
-            <div className="skill-box" key={index} data-aos="fade-down">
+            <div className="skill-box" key={index} data-aos="fade-up">
               <FontAwesomeIcon icon={skill.icon} className="skill-icon" />
               <p>{skill.name}</p>
             </div>
