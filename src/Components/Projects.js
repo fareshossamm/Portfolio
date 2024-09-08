@@ -24,7 +24,7 @@ const projects = [
   { id: 6, title: 'Alwalaa', imageUrl: img6, category: 'Frontend' },
   { id: 9, title: 'BookVoyage', imageUrl: img9, category: 'UI/UX' },
   { id: 8, title: 'EduPulse', imageUrl: img8, category: 'UI/UX' },
-  { id: 7, title: 'LumkiCare', imageUrl: img7, category: 'UI/UX' },
+  { id: 7, title: 'LumiCare', imageUrl: img7, category: 'UI/UX' },
   { id: 10, title: 'CRUD System', imageUrl: img10, category: 'Frontend' },
   { id: 11, title: 'Fetch Repos', imageUrl: img11, category: 'Frontend' },
 ];
