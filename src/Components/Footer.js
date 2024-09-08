@@ -24,12 +24,15 @@ const Footer = () => {
           <p><FontAwesomeIcon icon={faPhone} className="icon" /> +201029832925</p>
         </div>
         <div className="footer-links">
-          <h2>Links</h2>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a href="/contact">Contact</a>
-        </div>
+  <h2>Links</h2>
+  
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  
+</div>
+
 
       </div>
 
