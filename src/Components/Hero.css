@@ -34,10 +34,10 @@
     margin-bottom: 0;
 }
 
-.job {
+.hero-subtitle .job {
     font-size: 25px; /* Adjusted for responsiveness */
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 25px;
 }
 
 .hero-subtitle .highlight {
@@ -48,7 +48,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 25px; 
-    margin-top: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -133,6 +134,7 @@ margin-top: 40px;
 }
 
 .story{
+    line-height: 1.6;
 
     color: #b0b0b0;
 }
@@ -148,51 +150,57 @@ margin-top: 40px;
 }
 }
 @media (max-width: 768px) {
-.story{
-    font-size: 14px;
-    line-height: 1.8;
-    color: #aaa9a9;
-}
+    .story {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #aaa9a9;
+    }
+    
     .hero-title {
         font-size: 20px;
     }
-    .wave-icon{
+    
+    .wave-icon {
         font-size: 35px;
     }
     
-    .name {
-        font-size: 30px; 
+  .hero-subtitle .name {
+        font-size: 30px;
         font-weight: 700;
-       
     }
 
-    .job {
-        font-size: 20px; /* Adjusted for smaller screens */
+    .hero-subtitle .job {
+        font-size: 20px;
+        margin-top: 15px; /* Add margin-top for spacing between job and name */
     }
-
-   
 
     .hero-button {
-        font-size:20px;
+        font-size: 18px;
         font-weight: 600;
     }
+    
     .hero-content {
         z-index: 2;
         text-align: center;
         margin-top: 0px;
-
     }
-    .btns{
-align-items: center;
-justify-content: center;
+    
+    .btns {
+        align-items: center;
+        justify-content: center;
     }
-    .btn a{
+    
+    .btn a {
         max-width: 100%;
-
     }
-   
-      .contact{
-        padding-left:55px;
-        padding-right:55px;
-      }
+    
+    .contact {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    .btns .hero-button.contact {
+      
+        font-size: 20px; 
+    
+    }
 }

@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <div className="container">
+      
       <Link to="/" className="logo-link">
       <img className="logo" src={logo} alt="Logo" />
     </Link>
@@ -47,7 +47,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
     </nav>
   );
 };

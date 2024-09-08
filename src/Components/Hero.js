@@ -57,8 +57,11 @@ const Hero = () => {
               >
                 Download My Resume <FontAwesomeIcon icon={faDownload} className="resume-icon" />
               </a>
-              <SocialMediaIcons/>
+             
             </div>
+              <SocialMediaIcons/>
+           
+
           </div>
 
           <div

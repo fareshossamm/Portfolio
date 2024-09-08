@@ -2,7 +2,6 @@
     display: flex;
     gap: 20px; 
     background: #1e1e1e;
-    justify-content: center; /* Center icons horizontally */
     padding: 10px 0; /* Add padding for better spacing */
 }
 
@@ -59,8 +58,11 @@
     transform: scale(1.2) rotate(5deg); /* Slightly enlarge and rotate for modern effect */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    .social-media {
+        justify-content: center;
+    }
+    }@media (max-width: 768px) {
     .social-media {
         gap: 15px; /* Adjust gap for smaller screens */
         padding: 20px 0; /* Increase padding for better spacing */

@@ -2,10 +2,12 @@
 
 .logo {
     width: 100px;
+    margin-left: 25px;
   }
   
   .navbar {
     background-color: #1e1e1e;
+
   }
   
   .navbar .nav-link {
@@ -14,8 +16,9 @@
     font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s;
+    margin-right: 60px;
   }
-  
+ 
   .navbar .nav-link:hover {
     color: #ff6f4f;
   }
@@ -26,9 +29,28 @@
   @media (max-width: 992px) {
     .navbar .nav-link {
       padding-left: 25px;
+
     }
     .navbar-toggler{
       background:white;
+      margin-right: 50px;
+
     }
+   
+  }
+  @media (max-width: 768px) {
+    .navbar .nav-link {
+      padding-left: 25px;
+
+    }
+    .navbar-toggler{
+      margin-right: 20px;
+
+    }
+    .logo {
+      width: 100px;
+      margin-left: 0;
+    }
+    
    
   }
