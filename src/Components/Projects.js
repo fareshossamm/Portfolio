@@ -22,9 +22,9 @@ const projects = [
   { id: 4, title: 'Quiz', imageUrl: img4, category: 'Frontend' },
   { id: 5, title: 'Medical', imageUrl: img5, category: 'Frontend' },
   { id: 6, title: 'Alwalaa', imageUrl: img6, category: 'Frontend' },
-  { id: 7, title: 'LumkiCare', imageUrl: img7, category: 'UI/UX' },
-  { id: 8, title: 'EduPulse', imageUrl: img8, category: 'UI/UX' },
   { id: 9, title: 'BookVoyage', imageUrl: img9, category: 'UI/UX' },
+  { id: 8, title: 'EduPulse', imageUrl: img8, category: 'UI/UX' },
+  { id: 7, title: 'LumkiCare', imageUrl: img7, category: 'UI/UX' },
   { id: 10, title: 'Fetch Repos', imageUrl: img10, category: 'Frontend' },
   { id: 11, title: 'CRUD System', imageUrl: img11, category: 'Frontend' },
 ];
