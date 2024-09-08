@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import './Nav.css';
 import logo from './imgs/logo.png';
 
@@ -16,7 +17,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
-        <img className='logo' src={logo} alt="Logo" />
+      <Link to="/" className="logo-link">
+      <img className="logo" src={logo} alt="Logo" />
+    </Link>
         <button
           className="navbar-toggler"
           type="button"

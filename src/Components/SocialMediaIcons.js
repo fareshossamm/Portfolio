@@ -1,7 +1,7 @@
 // src/Components/SocialMediaIcons.js
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
-import { faLinkedin, faFacebook, faInstagram, faBehance, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faBehance, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './SocialMediaIcons.css'; // Import CSS for styling
 
 const SocialMediaIcons = () => {
@@ -19,14 +19,7 @@ const SocialMediaIcons = () => {
       <a href="https://www.behance.net/fareshossamm" target="_blank" rel="noopener noreferrer" className="behance">
         <FontAwesomeIcon icon={faBehance} />
       </a>
-      <a href="https://www.instagram.com/_fareshossam?igsh=czYya2QzbzczeTFs" target="_blank" rel="noopener noreferrer" className="instagram">
-        <FontAwesomeIcon icon={faInstagram} />
-      </a>
 
-      <a href="https://www.facebook.com/fares.hossam.1217" target="_blank" rel="noopener noreferrer" className="facebook">
-        <FontAwesomeIcon icon={faFacebook} />
-      </a>
-     
     </div>
   );
 };

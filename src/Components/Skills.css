@@ -36,11 +36,6 @@
   cursor: pointer;
 }
 
-.skill-box:hover {
-  transform: translateY(-5px);
-  background-color: #ff6f4f;
-}
-
 .skill-box p {
   font-size: 22px;
   font-weight: 600;
@@ -48,9 +43,7 @@
   transition: color 0.3s ease;
 }
 
-.skill-box:hover p {
-  color: white;
-}
+
 
 .skill-icon {
   font-size: 36px;
@@ -59,9 +52,7 @@
   transition: color 0.3s ease;
 }
 
-.skill-box:hover .skill-icon {
-  color: white;
-}
+
 
 .skill-box::before,
 .skill-box::after {
@@ -77,15 +68,15 @@
 }
 
 .skill-box::before {
-  border-top: 4px solid #ffffff;
-  border-left: 4px solid #ffffff;
+  border-top: 6px solid #ff6f4f;
+  border-left: 6px solid #ff6f4f;
   transform: scale(0);
   transform-origin: top left;
 }
 
 .skill-box::after {
-  border-bottom: 4px solid #ffffff;
-  border-right: 4px solid #ffffff;
+  border-bottom: 6px solid #ff6f4f;
+  border-right: 6px solid #ff6f4f;
   transform: scale(0);
   transform-origin: bottom right;
 }

@@ -1,239 +1,63 @@
-/* src/components/About.css */
-
+/* Base styles for the about-container */
 .about-container {
   display: flex;
-  justify-content: space-between;
-  padding: 120px 40px;
-  height: 100vh;
-  background: #1e1e1e;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.left-pane {
-  width: 30%;
-  background: #181f30;
-  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background: #1e1e1e; /* Dark background color for contrast */
   padding: 20px;
-  border-radius: 16px;
+  box-sizing: border-box;
 }
 
-.avatar-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.avatar {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.about-container h1 {
-  margin-top: 10px;
-  font-size: 35px;
-  text-align: center;
-}
-
-.about-container h4 {
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.about-container h2 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #ff6f4f;
-  margin: 25px 0;
-}
-
-.about-container p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #acacac;
-  margin: 15px 0;
-}
-
-.about-container .subtitle {
-  font-size: 18px;
-  font-weight: 600;
-  color: #ff6f4f;
-  text-align: center;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.about-container .nav li {
-  cursor: pointer;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  color: #ffffff;
-  border-radius: 10px;
-  transition: color 0.5s;
-}
-
-.nav li.active {
-  color: #ff6f4f;
-  font-weight: bold;
-}
-
-.nav .icon {
-  margin-right: 12px;
-  font-size: 20px;
-}
-
+/* Styling for the right pane */
 .right-pane {
-  width: 65%;
+  background: #2c2c2c; /* Slightly lighter background for the content area */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  padding: 30px;
+  margin-top: 70px;
+  max-width: 1000px; /* Max width for larger screens */
+  width: 100%; /* Full width on smaller screens */
 }
 
+/* Content section styling */
 .content-section {
-  margin-top: 20px;
+  color: #f5f5f5; /* Light text color for contrast */
 }
 
-h2 {
-  color: #ff6f4f;
+
+.content-section p {
+  font-size: 18px;
+  line-height: 1.8; /* Reduced line height for readability */
+  color: #e0e0e0; /* Slightly lighter text color for readability */
   margin-bottom: 20px;
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-}
-
-.section-icon {
-  margin-left: 10px;
-  font-size: 28px;
-}
-
-.links-container {
-  display: flex;
-  gap: 20px;
-}
-
-.link-icon {
-  font-size: 36px;
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-.link-icon:hover {
-  color: #ff6f4f;
+  padding: 0 10px; /* Add padding to prevent text from touching edges */
 }
 
 .Languages {
-  color: white;
-  font-size: 22px;
-  font-weight: 600;
+  font-weight: bold;
+  color: #ffffff; /* White color for emphasis */
+  font-size: 20px; /* Adjusted font size for better readability */
+  margin-top: 20px; /* Spacing above the languages section */
 }
 
-/* Responsive Styles */
-@media (max-width: 992px) {
-
-  
-  .about-container {
-    flex-direction: column;
-    padding: 20px;
-    height: auto;
-  }
-
-  .left-pane,
-  .right-pane {
-    width: 100%;
-  }
-
-  .left-pane {
-    margin-bottom: 20px;
-  }
-
-  .avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-  .about-container h1 {
-    font-size: 28px;
-  }
-
-  .about-container h4 {
-    font-size: 18px;
-  }
-
-  .about-container h2 {
-    font-size: 24px;
-  }
-
-  .about-container p {
-    font-size: 18px;
-  }
-
-  .nav li {
-    font-size: 18px;
-  }
-
-  .skills-container {
-    flex-direction: column;
-  }
-
-  .skill-box {
-    width: 100%;
-  }
-
-  .links-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .link-icon {
-    font-size: 30px;
-  }
-}
-
+/* Responsive styling */
 @media (max-width: 768px) {
-  .about-container {
-    margin-top: 70px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-container {
-    padding: 10px;
-    padding-top: 40px;
+  .right-pane {
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 
-  .avatar {
-    width: 100px;
-    height: 100px;
+  .content-section h2 {
+    font-size: 24px; /* Adjust title size for smaller screens */
   }
 
-  .about-container h1 {
-    font-size: 24px;
+  .content-section p {
+
+    font-size: 16px; /* Adjust font size for smaller screens */
+    line-height: 1.6; /* Adjust line height for better readability on smaller screens */
   }
 
-  .about-container h4 {
-    font-size: 16px;
-  }
-
-  .about-container h2 {
-    font-size: 20px;
-  }
-
-  .about-container p {
-    font-size: 16px;
-  }
-
-  .nav li {
-    font-size: 16px;
-  }
-
-  .skill-box {
-    width: 100%;
+  .Languages {
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
 }

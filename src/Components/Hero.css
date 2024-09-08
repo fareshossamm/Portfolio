@@ -23,7 +23,7 @@
 }
 
 .hero-title {
-    font-size: 2.5rem; /* Adjusted for responsiveness */
+    font-size:30px ; /* Adjusted for responsiveness */
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -52,7 +52,6 @@
 }
 
 .hero-button {
-    background-color: #ff7e5f;
     color: white;
     padding: 10px 20px;
     border-radius: 12px;
@@ -61,21 +60,31 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    transition:  0.5s; 
+    transition:  0.7s; 
     gap: 10px; 
+    border: 2px solid white;
   }
-  
+  .hero-button:hover{
+    background-color: #ffff;
+    color: #ff6f4f;
+    border: none;
+  }
   .button-icon {
     font-size:20px; /* Size of the icon */
   }
   
-.hero-button:hover{
+
+  .btns .hero-button.contact {
+    background-color: #ff6f4f; /* New background color */
+    color: #ffffff; /* New text color */
+    border: none;
+}
+.btns .hero-button.contact:hover{
     color: #ff6f4f; 
     background-color: #ffffff;
   }
-  
 .icon-spacing {
-    margin-left: 10px; /* Adjust space as needed */
+    margin-left: 10px; 
 }
 
 
@@ -129,15 +138,17 @@ margin-top: 40px;
 .hero-section {
     text-align: center;
     flex-wrap: wrap;
-    padding: 190px 1rem 180px 1rem; 
+    padding: 120px 1rem 180px 1rem; 
     height: auto;
 }
 }
 @media (max-width: 768px) {
-
-
+.story{
+    font-size: 15px;
+    line-height: 1.8;
+}
     .hero-title {
-        font-size: 28px;
+        font-size: 20px;
     }
     .wave-icon{
         font-size: 35px;
