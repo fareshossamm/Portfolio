@@ -130,7 +130,10 @@ margin-top: 40px;
     100% { transform: rotate(0deg); }
 }
 
+.story{
 
+    color: #b0b0b0;
+}
 @media (max-width: 992px) {
 .hero-img-container {
     display: none;
@@ -146,6 +149,7 @@ margin-top: 40px;
 .story{
     font-size: 15px;
     line-height: 1.8;
+    color: aliceblue;
 }
     .hero-title {
         font-size: 20px;
