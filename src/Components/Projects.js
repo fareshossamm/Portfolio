@@ -100,7 +100,7 @@ const Projects = () => {
           className='see-all-btn' 
           onClick={handleShowAllToggle}
         >
-          {showAll ? 'Show Less' : 'See All'}
+          {showAll ? 'Show Less' : 'Show More'}
         </button>
       </div>
     </section>

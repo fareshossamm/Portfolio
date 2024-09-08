@@ -45,7 +45,7 @@ function App() {
               <Hero />
               <Projects /> 
               <Services /> 
-              <Skills/> 
+              <Skills/>
             </>
           }
         />

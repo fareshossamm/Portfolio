@@ -78,7 +78,7 @@ const Contact = () => {
       <div className='contact-container'>
         <div className='form-container' data-aos="fade-right"> {/* Animation */}
           <h4>Get in Touch</h4>
-          <h1>Contact Us</h1>
+          <h1>Contact Me</h1>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
