@@ -6,7 +6,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import heroImage from "./imgs/me.webp"; 
+import heroImage from "./imgs/me.webp";
 import SocialMediaIcons from './SocialMediaIcons'; 
 
 
@@ -36,7 +36,6 @@ const Hero = () => {
             <p className="hero-subtitle">
               <span className="name">
                 I'm <span className="highlight">Fares Hossam</span>
-                <span className="emoji"> ✨</span>
               </span>
               <br />
             </p>

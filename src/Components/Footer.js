@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-container">
        
         <div className="about-us">
-          <h2>About Us</h2>
+          <h2>About Me</h2>
        <p>I'm a passionate Developer & Designer dedicated to delivering high-quality services and products.
          My goal is to bring innovative solutions to my clients and ensure satisfaction through my work.</p>
          <SocialMediaIcons/> 
