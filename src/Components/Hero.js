@@ -35,6 +35,10 @@ const Hero = () => {
             <p className="hero-subtitle">
               <span className="name">
                 I’m <span className="highlight">Fares Hossam</span>
+              </span> <br/>
+              <span className="job">
+                Frontend Developer & UI/UX Designer{" "}
+                <span className="emoji">🎨</span>
               </span>
             </p>
             <p className="story">Step into a world of creativity and innovation where every project reflects a blend of passion, skill, and excellence. Whether you’re here to explore my latest work, download my resume to learn more about my experience, or connect for new opportunities, you’re in the right place. <br/>

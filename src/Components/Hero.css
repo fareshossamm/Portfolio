@@ -35,7 +35,7 @@
 }
 
 .job {
-    font-size: 2rem; /* Adjusted for responsiveness */
+    font-size: 25px; /* Adjusted for responsiveness */
     font-weight: 400;
     margin-bottom: 2rem;
 }
@@ -78,6 +78,8 @@
     background-color: #ff6f4f; /* New background color */
     color: #ffffff; /* New text color */
     border: none;
+    font-size: 22px; 
+
 }
 .btns .hero-button.contact:hover{
     color: #ff6f4f; 
@@ -147,9 +149,9 @@ margin-top: 40px;
 }
 @media (max-width: 768px) {
 .story{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.8;
-    color: aliceblue;
+    color: #aaa9a9;
 }
     .hero-title {
         font-size: 20px;
@@ -165,7 +167,7 @@ margin-top: 40px;
     }
 
     .job {
-        font-size: 1.5rem; /* Adjusted for smaller screens */
+        font-size: 20px; /* Adjusted for smaller screens */
     }
 
    
