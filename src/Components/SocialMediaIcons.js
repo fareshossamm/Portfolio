@@ -23,7 +23,7 @@ const SocialMediaIcons = () => {
         <FontAwesomeIcon icon={faInstagram} />
       </a>
 
-      <a href="hhttps://www.facebook.com/fares.hossam.1217?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="facebook">
+      <a href="https://www.facebook.com/fares.hossam.1217" target="_blank" rel="noopener noreferrer" className="facebook">
         <FontAwesomeIcon icon={faFacebook} />
       </a>
      
