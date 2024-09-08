@@ -19,8 +19,8 @@ const projects = [
     imageUrl: img1,
     description: 'Cerca is a local t-shirt brand that focuses on providing high-quality, stylish, and comfortable unisex t-shirts. The website features a modern and clean design.',
     technologies: ['React', 'React-DOM', 'React-Router-Dom', 'React-Bootstrap'],
-    repoLink: 'https://github.com/example/project-one',
-    demoLink: 'https://example.com/demo-project-one'
+    repoLink: 'https://github.com/fareshossamm/Cerca.git',
+    demoLink: 'https://cerca-fareshossamms-projects.vercel.app/'
   },
   {
     id: 2,
@@ -67,21 +67,21 @@ const projects = [
     imageUrl: img7,
     description: 'Design a user-centric elder healthcare app in Figma, focusing on ease of use and accessibility. Create clear, intuitive interfaces for features like medication management, appointment scheduling, and health monitoring. Ensure large, readable text, simple navigation, and high-contrast colors to enhance usability for elders.',
     technologies: ['Figma'],
-    BehanceLink: 'https://fareshossamm.github.io/E-learning/'
+    BehanceLink: 'https://www.behance.net/gallery/206773061/LumiCare'
   },
   {
     id: 8,
     imageUrl: img8,
     description: 'Design an intuitive E-learning platform by creating wireframes and high-fidelity mockups in Figma. Focus on user-friendly layouts for course listings, details, and dashboards, ensuring responsive design across devices. Use Figma’s collaborative features for feedback and iterate on designs for accessibility and consistency.',
     technologies: ['Figma'],
-    BehanceLink: 'https://fareshossamm.github.io/E-learning/'
+    BehanceLink: 'https://www.behance.net/gallery/206463579/EduPluse'
   },
   {
     id: 9,
     imageUrl: img9,
     description: 'BookVoyage is a cutting-edge mobile app designed to transform the way book enthusiasts discover, purchase, and read their favorite titles. Whether you are an avid reader or just beginning your literary journey, BookVoyage offers a seamless and personalized experience tailored to your reading preferences',
     technologies: ['Figma'],
-    BehanceLink: 'https://fareshossamm.github.io/E-learning/'
+    BehanceLink: 'https://www.behance.net/gallery/207179997/BookVoyage'
   },
   {
     id: 10,
