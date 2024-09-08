@@ -6,7 +6,7 @@
   align-items: center;
   min-height: 100vh;
   background: #1e1e1e;
-  padding: 20px;
+  padding: 0px;
   padding-top: 100px;
 }
 
@@ -92,7 +92,7 @@ form textarea:focus {
 }
 
 /* Hide image on tablet and mobile */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .illustration-container {
     display: none; /* Hides the illustration on tablets and mobile devices */
   }
