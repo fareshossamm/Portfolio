@@ -3,7 +3,7 @@
     background: #1e1e1e;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 20px 20px;
     height: auto;
 }
 
@@ -185,16 +185,15 @@
     .projects-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     }
+  
     .projects-section {
-    
         height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .projects-section {
-   
-        padding: 20px 20px;
+        padding: 0px 20px 40px;
     }
     
     .section-title {

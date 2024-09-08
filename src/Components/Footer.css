@@ -1,0 +1,139 @@
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 30px 20px 2px; /* Increased padding for better spacing */
+    border-top: 1px solid rgb(70, 70, 70);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Adequate gap between sections */
+}
+
+/* Styling for About Us Section */
+.about-us {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between about us content and social media */
+}
+
+.about-us h2 {
+    font-size: 22px; /* Ensure heading size is consistent */
+    margin-bottom: 15px;
+}
+
+/* Styling for Footer Links Section */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Spacing between links */
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px; 
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6f4f;
+}
+
+
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-info .icon {
+    margin-right: 5px; 
+    color: #ff6f4f;
+}
+
+.about-us .social-media {
+    display: flex;
+    gap: 20px; /* Increased gap for social media icons */
+    justify-content: center; /* Center icons */
+}
+
+/* Hover Effects for Social Media Icons */
+.social-media a:hover {
+    transform: scale(1.2) rotate(5deg); /* Slightly enlarge and rotate for modern effect */
+}
+
+/* Styling for Copyright Section */
+.copyright {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us {
+        align-items: center;
+    }
+   /* Styling for Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Gap between sections on small screens */
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .about-us,
+    .contact-info,
+    .footer-links {
+        text-align: center;
+        margin-bottom: 20px; /* Space between sections on small screens */
+    }
+
+    .about-us .social-media {
+        flex-direction: row; /* Ensure social media icons are in a row */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+
+    .footer-links a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .copyright {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .footer {
+      
+        padding: 30px 20px 4px; 
+        
+    }
+}

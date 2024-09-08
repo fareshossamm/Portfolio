@@ -19,6 +19,7 @@
 .hero-content {
     z-index: 2;
     text-align: left;
+    margin-top: 50px;
 }
 
 .hero-title {
@@ -127,7 +128,7 @@ margin-top: 40px;
 }
 .hero-section {
     text-align: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 190px 1rem 180px 1rem; 
     height: auto;
 }
@@ -161,6 +162,8 @@ margin-top: 40px;
     .hero-content {
         z-index: 2;
         text-align: center;
+        margin-top: 0px;
+
     }
     .btns{
 align-items: center;

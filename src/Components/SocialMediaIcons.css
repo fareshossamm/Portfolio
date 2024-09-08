@@ -1,0 +1,82 @@
+.social-media {
+    display: flex;
+    gap: 20px; 
+    background: #1e1e1e;
+    justify-content: center; /* Center icons horizontally */
+    padding: 10px 0; /* Add padding for better spacing */
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 30px; /* Slightly larger icon for better visibility */
+    transition: 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info h2 {
+    margin-bottom: 25px;
+}
+
+/* Social Media Icon Colors */
+.social-media .linkedin {
+    background-color: #1271ff; /* LinkedIn Blue */
+}
+
+.social-media .facebook {
+    background-color: #0051ff; /* Facebook Blue */
+}
+
+.social-media .instagram {
+    background-color: #ff1f6a; /* Instagram Pink */
+}
+
+.social-media .behance {
+    background-color: #0057FF; /* Behance Blue */
+}
+
+.social-media .github {
+    
+    background-color: #000000; /* GitHub Black */
+}
+
+.social-media .whatsapp {
+    background-color: #00b643; /* WhatsApp Green */
+}
+
+.social-media a svg {
+    fill: #ffffff; /* Ensure the SVG logo inside is white */
+}
+
+/* Hover Effects */
+.social-media a:hover {
+    transform: scale(1.2) rotate(5deg); /* Slightly enlarge and rotate for modern effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-media {
+        gap: 15px; /* Adjust gap for smaller screens */
+        padding: 20px 0; /* Increase padding for better spacing */
+    }
+
+    .social-media a {
+        font-size: 24px; /* Smaller icon size for smaller screens */
+        width: 40px; /* Smaller width for smaller screens */
+        height: 40px; /* Smaller height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media a {
+        font-size: 20px; /* Further reduce icon size for very small screens */
+        width: 35px; /* Further reduce width */
+        height: 35px; /* Further reduce height */
+    }
+}

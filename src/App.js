@@ -10,6 +10,8 @@ import Services from './Components/Services';
 import Projects from './Components/Projects';
 import ProjectDetail from './Components/ProjectDetails'; 
 import Skills from './Components/Skills'; 
+import Footer from './Components/Footer'; 
+import ScrollToTopButton from './Components/ScrollToTopButton'; // Import the scroll-to-top button
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -52,6 +54,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
+      <Footer/> 
+      <ScrollToTopButton /> {/* Include the scroll-to-top button */}
     </Router>
   );
 }

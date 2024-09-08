@@ -6,7 +6,9 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import heroImage from "./imgs/me.webp"; // Update with your image path
+import heroImage from "./imgs/me.webp"; 
+import SocialMediaIcons from './SocialMediaIcons'; 
+
 
 const Hero = () => {
   useEffect(() => {
@@ -59,8 +61,12 @@ const Hero = () => {
                 Download Resume <FontAwesomeIcon icon={faDownload} className="resume-icon" />
 
               </a>
+              <SocialMediaIcons/>
+
             </div>
+
           </div>
+          
           <div
             className="col-lg-6 col-md-12 hero-img-container"
             data-aos="fade-left"
@@ -70,7 +76,9 @@ const Hero = () => {
               alt="Fares Hossam - Frontend Developer"
               className="hero-image"
             />
+            
           </div>
+          
         </div>
         
       </div>
