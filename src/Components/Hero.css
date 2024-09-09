@@ -1,3 +1,5 @@
+/* Hero Section Styles */
+
 .hero-section {
     display: flex;
     justify-content: center; /* Center content horizontally */
@@ -8,36 +10,31 @@
     position: relative;
     overflow: hidden;
     text-transform: capitalize; /* Capitalize text */
-    text-align: center; /* Center text inside the section */
-}
-
-.hero-section > * {
-    /* Ensures all direct children of .hero-section are centered */
-    margin: 0;
 }
 
 .hero-content {
     z-index: 2;
-    text-align: left;
-    margin-top: 50px;
+    margin: 50px auto 0; /* Center the content horizontally and add top margin */
+    max-width: 1200px; /* Maximum content width */
+    padding: 0 20px; /* Padding for small screens */
 }
 
 .hero-title {
-    font-size:30px ; /* Adjusted for responsiveness */
+    font-size: 30px; /* Adjusted for responsiveness */
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 10px; /* Space below the title */
 }
 
 .name {
     font-size: 3rem; /* Adjusted for responsiveness */
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 10px; /* Space below the name */
 }
 
-.hero-subtitle .job {
+.job {
     font-size: 25px; /* Adjusted for responsiveness */
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 20px; /* Space below the job title */
 }
 
 .hero-subtitle .highlight {
@@ -61,35 +58,38 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    transition:  0.7s; 
+    transition: 0.5s; 
     gap: 10px; 
     border: 2px solid white;
-  }
-  .hero-button:hover{
+    width: auto; /* Adjust width based on content */
+    height: auto; /* Adjust height based on content */
+}
+
+.hero-button:hover {
     background-color: #ffff;
     color: #ff6f4f;
     border: none;
-  }
-  .button-icon {
-    font-size:20px; /* Size of the icon */
-  }
-  
+}
 
-  .btns .hero-button.contact {
+.button-icon {
+    font-size: 20px; /* Size of the icon */
+}
+
+.btns .hero-button.contact {
     background-color: #ff6f4f; /* New background color */
     color: #ffffff; /* New text color */
     border: none;
-    font-size: 22px; 
-
+    transition: 0.6s;
 }
-.btns .hero-button.contact:hover{
+
+.btns .hero-button.contact:hover {
     color: #ff6f4f; 
     background-color: #ffffff;
-  }
+}
+
 .icon-spacing {
     margin-left: 10px; 
 }
-
 
 .hero-img-container {
     position: relative;
@@ -104,16 +104,9 @@
     z-index: 2;
     margin-top: 50px;
 }
+
 .links-container {
-margin-top: 40px;
-}
-@keyframes rotateShape {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    margin-top: 40px;
 }
 
 .wave-icon {
@@ -122,55 +115,96 @@ margin-top: 40px;
     animation: wave 2s infinite;
 }
 
-@keyframes wave {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    30% { transform: rotate(14deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
-    60% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
-}
-
-.story{
+.story {
     line-height: 1.6;
-
     color: #b0b0b0;
 }
+
+@media (max-width: 1200px) {
+    .hero-section {
+        padding-top: 120px;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Ensure content width does not exceed viewport */
+        padding: 0 20px; /* Add padding to content */
+        text-align: center; /* Center text */
+        margin-top: 50px; /* Adjust margin-top for smaller screens */
+    }
+
+    .hero-img-container {
+        display: none; /* Hide the image on screens <= 1200px */
+    }
+
+    .hero-title {
+        font-size: 26px; /* Smaller title for medium screens */
+    }
+
+    .name {
+        font-size: 2.5rem; /* Smaller name font size for medium screens */
+    }
+
+    .job {
+        font-size: 22px; /* Smaller job title font size */
+    }
+
+    .btns {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        gap: 20px; /* Adjust gap between buttons */
+    }
+}
+
 @media (max-width: 992px) {
-.hero-img-container {
-    display: none;
+    .hero-section {
+        padding: 120px 1rem 180px 1rem; 
+    }
+
+    .hero-content {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+        margin-top: 50px; /* Adjust margin-top for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 22px; /* Adjust title font size */
+    }
+
+    .name {
+        font-size: 2rem; /* Adjust name font size */
+    }
+
+    .job {
+        font-size: 20px; /* Adjust job title font size */
+    }
+
+    .btns {
+        gap: 15px; /* Adjust gap between buttons */
+    }
 }
-.hero-section {
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 120px 1rem 180px 1rem; 
-    height: auto;
-}
-}
+
 @media (max-width: 768px) {
     .story {
         font-size: 14px;
         line-height: 1.8;
         color: #aaa9a9;
     }
-    
+
     .hero-title {
         font-size: 20px;
     }
-    
+
     .wave-icon {
         font-size: 35px;
     }
-    
-  .hero-subtitle .name {
+
+    .hero-subtitle .name {
         font-size: 30px;
         font-weight: 700;
     }
 
-    .hero-subtitle .job {
-        font-size: 20px;
+    .job {
+        font-size: 18px;
         margin-top: 15px; /* Add margin-top for spacing between job and name */
     }
 
@@ -178,29 +212,15 @@ margin-top: 40px;
         font-size: 18px;
         font-weight: 600;
     }
-    
+
     .hero-content {
-        z-index: 2;
         text-align: center;
-        margin-top: 0px;
+        margin-top: 50px; /* Adjust margin-top for smaller screens */
     }
-    
+
     .btns {
         align-items: center;
         justify-content: center;
-    }
-    
-    .btn a {
-        max-width: 100%;
-    }
-    
-    .contact {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-    .btns .hero-button.contact {
-      
-        font-size: 20px; 
-    
+        gap: 20px;
     }
 }

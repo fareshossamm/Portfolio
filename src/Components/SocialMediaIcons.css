@@ -1,5 +1,7 @@
+
 .social-media {
     display: flex;
+    align-items: flex-start;
     gap: 20px; 
     background: #1e1e1e;
     padding: 10px 0; /* Add padding for better spacing */
@@ -58,7 +60,7 @@
     transform: scale(1.2) rotate(5deg); /* Slightly enlarge and rotate for modern effect */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .social-media {
         justify-content: center;
     }

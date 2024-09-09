@@ -1,105 +1,105 @@
 /* ScrollToTopButton.css */
 
 .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #ff6f4f;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    z-index: 1000;
-    overflow: hidden;
-  }
-  
-  .scroll-to-top.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .scroll-to-top:hover {
-    background-color: #ff6f4f;
-    transform: scale(1.1); /* Slightly increase size on hover */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ff6f4f;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  background-color: #ff6f4f;
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
+}
+
+.scroll-to-top .svgIcon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover .svgIcon {
+  transform: translateY(-5px); /* Animate the icon on hover */
+  fill: #121212; /* Change icon color on hover */
+}
+
+.scroll-to-top .tooltip {
+  position: absolute;
+  bottom: 70px; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.scroll-to-top:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: 80px; /* Adjust for better visibility */
+}
+
+/* Responsive adjustments for screens <= 1200px */
+@media (max-width: 1200px) {
+  .scroll-to-top {
+      bottom: 15px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
   }
   
   .scroll-to-top .svgIcon {
-    fill: white;
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
-  }
-  
-  .scroll-to-top:hover .svgIcon {
-    transform: translateY(-5px); /* Animate the icon on hover */
-    fill: #121212; /* Change icon color on hover */
+      width: 20px;
+      height: 20px;
   }
   
   .scroll-to-top .tooltip {
-    position: absolute;
-    bottom: 70px; /* Adjust as needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
-    visibility: hidden;
-  }
-  
-  .scroll-to-top:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    bottom: 80px; /* Adjust for better visibility */
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .scroll-to-top {
-      width: 50px;
-      height: 50px;
-      bottom: 15px;
-      right: 15px;
-    }
-    
-    .scroll-to-top .svgIcon {
-      width: 20px;
-      height: 20px;
-    }
-    
-    .scroll-to-top .tooltip {
       bottom: 60px; /* Adjust for smaller screens */
       font-size: 10px;
       padding: 4px 8px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .scroll-to-top {
-      width: 40px;
-      height: 40px;
+}
+
+/* Responsive adjustments for screens <= 768px */
+@media (max-width: 768px) {
+  .scroll-to-top {
       bottom: 10px;
       right: 10px;
-    }
-    
-    .scroll-to-top .svgIcon {
+      width: 40px;
+      height: 40px;
+  }
+  
+  .scroll-to-top .svgIcon {
       width: 16px;
       height: 16px;
-    }
-    
-    .scroll-to-top .tooltip {
+  }
+  
+  .scroll-to-top .tooltip {
       bottom: 50px; /* Adjust for very small screens */
       font-size: 8px;
       padding: 3px 6px;
-    }
   }
-  
+}

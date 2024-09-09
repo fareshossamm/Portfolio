@@ -205,6 +205,10 @@
     .filter-btn{
         font-size: 18px;
     }
+    .project-title {
+        font-size: 22px;
+       
+    }
 }
 
 @media (max-width: 576px) {

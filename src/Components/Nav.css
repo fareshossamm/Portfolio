@@ -16,7 +16,7 @@
     font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s;
-    margin-right: 60px;
+    margin-right: 40px;
   }
  
   .navbar .nav-link:hover {
@@ -41,6 +41,8 @@
   @media (max-width: 768px) {
     .navbar .nav-link {
       padding-left: 25px;
+      font-size:16px;
+      font-weight: 500;
 
     }
     .navbar-toggler{
