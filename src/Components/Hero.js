@@ -47,7 +47,7 @@ const Hero = () => {
   className="hero-button download"
   download
 >
-  My Resume{" "}
+  Download Resume{" "}
   <FontAwesomeIcon icon={faDownload} className="resume-icon" />
 </a>
 
