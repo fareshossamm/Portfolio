@@ -12,8 +12,9 @@ const Footer = () => {
        
         <div className="about-us">
           <h2>About Me</h2>
-       <p>I'm a passionate Developer & Designer dedicated to delivering high-quality services and products.
-         My goal is to bring innovative solutions to my clients and ensure satisfaction through my work.</p>
+       <p>I’m a frontend developer and UI/UX designer with a passion for transforming ideas into engaging digital experiences. I thrive on crafting clean,
+         responsive code and intuitive designs that prioritize user needs. Every project I take on balances functionality with aesthetics,
+         ensuring that the result is both visually appealing and highly usable.</p>
          <SocialMediaIcons/> 
 
         </div>

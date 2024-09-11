@@ -109,7 +109,18 @@
 .links-container {
     margin-top: 40px;
 }
-
+@keyframes wave {
+    0% { transform: rotate(0deg); } /* Starting point */
+    10% { transform: rotate(14deg); } /* Hand moves right */
+    20% { transform: rotate(-8deg); } /* Hand moves left */
+    30% { transform: rotate(14deg); } /* Hand moves right */
+    40% { transform: rotate(-4deg); } /* Hand moves slightly left */
+    50% { transform: rotate(10deg); } /* Hand moves back right */
+    60% { transform: rotate(-8deg); } /* Hand moves left */
+    70% { transform: rotate(10deg); } /* Hand moves right */
+    80% { transform: rotate(-6deg); } /* Hand moves left */
+    100% { transform: rotate(0deg); } 
+}
 .wave-icon {
     display: inline-block;
     font-size: 2.8rem; /* Larger emoji for emphasis */
@@ -190,7 +201,7 @@
         margin-bottom: 10px; /* Space below the job title */
     }
     .hero-section {
-        padding:70px 1rem 180px 1rem; 
+        padding:70px 1rem 100px 1rem; 
     }
 
     .btns {

@@ -18,13 +18,16 @@
 /* Styling for About Us Section */
 .about-us {
     flex: 1;
-    max-width: 400px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Spacing between about us content and social media */
+    gap: 10px; /* Spacing between about us content and social media */
 }
 
-
+.about-us p {
+    font-size: 16px;
+    color: #b0b0b0;
+}
 
 /* Styling for Footer Links Section */
 .footer-links {
@@ -133,7 +136,7 @@
     }
     .footer {
       
-        padding: 30px 20px 4px; 
+        padding: 80px 20px 4px; 
         
     }
 }

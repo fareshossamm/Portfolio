@@ -3,7 +3,7 @@
     background: #1e1e1e;
     color: white;
     text-align: center;
-    padding: 80px 20px 50px;
+    padding: 80px 20px 150px;
     height: auto;
 }
 
@@ -193,7 +193,7 @@
 
 @media (max-width: 768px) {
     .projects-section {
-        padding: 0px 20px 40px;
+        padding: 0px 20px 100px;
     }
     
     .section-title {

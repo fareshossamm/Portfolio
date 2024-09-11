@@ -114,12 +114,16 @@ const Contact = () => {
             {errors.message && <div className='error-message'>{errors.message}</div>}
             <button className='btn' type="submit">Send Message</button>
           </form>
+
         </div>
         <div className='illustration-container' data-aos="fade-left"> {/* Animation */}
           <img src={ContactImg} alt="Contact Illustration" className="illustration" />
         </div>
+        
       </div>
+
     </div>
+    
   );
 };
 
