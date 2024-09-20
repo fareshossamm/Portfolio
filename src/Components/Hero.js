@@ -37,6 +37,8 @@ const Hero = () => {
             <p className="story">
               I’m dedicated to transforming ideas into engaging digital experiences. My passion lies in crafting clean, responsive code and intuitive designs that prioritize user needs. Here, every project reflects a balance of functionality and aesthetics. Explore my latest work, download my resume to learn more about my experience.
             </p>
+            <SocialMediaIcons />
+
             <div className="btns">
               <Link to="/contact" className="hero-button contact">
                 Contact Me{" "}
@@ -52,7 +54,6 @@ const Hero = () => {
 </a>
 
             </div>
-            <SocialMediaIcons />
           </div>
 
           <div className="col-lg-6 col-md-12 hero-img-container" data-aos="fade-left">
