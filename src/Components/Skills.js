@@ -14,13 +14,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
 const skillsData = [
+  { icon: faFigma, name: 'Figma' },
+  { icon: faPalette, name: 'UI/UX' },
   { icon: faHtml5, name: 'HTML' },
   { icon: faCss3Alt, name: 'CSS' },
   { icon: faJsSquare, name: 'JavaScript' },
   { icon: faReact, name: 'React' },
   { icon: faBootstrap, name: 'Bootstrap' },
-  { icon: faFigma, name: 'Figma' },
-  { icon: faPalette, name: 'UI/UX' },
   { icon: faDatabase, name: 'SQL' },
 ];
 
