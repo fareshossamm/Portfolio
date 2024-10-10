@@ -31,12 +31,11 @@ const Hero = () => {
               <br />
             </h4>
             <h4 className="job">
-              Frontend Developer & UI/UX Designer{" "}
+              UI/UX Designer & Frontend Developer {" "}
               <span className="emoji">🎨</span>
             </h4>
             <p className="story">
-              I’m dedicated to transforming ideas into engaging digital experiences. My passion lies in crafting clean, responsive code and intuitive designs that prioritize user needs. Here, every project reflects a balance of functionality and aesthetics. Explore my latest work, download my resume to learn more about my experience.
-            </p>
+            Here, you’ll find a blend of visually stunning designs and user-centric digital experiences. With a keen eye for detail and a passion for problem-solving, I craft intuitive interfaces and responsive web applications that resonate with users. Explore the intersection of design and technology as I bring ideas to life! 🎨✨            </p>
             <SocialMediaIcons />
 
             <div className="btns">

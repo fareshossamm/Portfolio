@@ -9,12 +9,15 @@ import img3 from './imgs/e learning.webp';
 import img4 from './imgs/Quiz.webp'; 
 import img5 from './imgs/medical.webp'; 
 import img6 from './imgs/alwalaa.webp'; 
-import img7 from './imgs/lumicare2.webp'; 
-import img8 from './imgs/landing laptop.webp'; 
-import img9 from './imgs/file cover - 1.webp'; 
-import img10 from './imgs/CRUD-1.webp'; 
-import img11 from './imgs/fetch.webp' ; 
-import img12 from './imgs/tawtheq.webp' ; 
+import img7 from './imgs/lumicare2.png'; 
+import img8 from './imgs/EduPlus.png'; 
+import img9 from './imgs/velocart.png'; 
+import img10 from './imgs/tawtheq.webp'; 
+import img11 from './imgs/real state .png'; 
+import img12 from './imgs/course dashboard.png'; 
+import img13 from './imgs/task manager.png'; 
+import img14 from './imgs/finicial.png'; 
+import img15 from './imgs/weather.png'; 
 
 const projects = [
   { id: 1, title: 'Cerca', imageUrl: img1, category: 'Frontend' },
@@ -23,21 +26,25 @@ const projects = [
   { id: 4, title: 'Quiz', imageUrl: img4, category: 'Frontend' },
   { id: 5, title: 'Medical', imageUrl: img5, category: 'Frontend' },
   { id: 6, title: 'Alwalaa', imageUrl: img6, category: 'Frontend' },
-  { id: 12, title: 'Tawtheq', imageUrl: img12, category: 'UI/UX' },
-  { id: 7, title: 'LumiCare', imageUrl: img7, category: 'UI/UX' },
-  { id: 9, title: 'BookVoyage', imageUrl: img9, category: 'UI/UX' },
-  { id: 8, title: 'EduPulse', imageUrl: img8, category: 'UI/UX' },
-  { id: 10, title: 'CRUD System', imageUrl: img10, category: 'Frontend' },
-  { id: 11, title: 'Fetch Repos', imageUrl: img11, category: 'Frontend' },
+  { id: 7, title: 'Financial Dashboard', imageUrl: img14, category: 'UI/UX' },
+  { id: 8, title: 'Courses Dashboard', imageUrl: img12, category: 'UI/UX' },
+  { id: 9, title: 'Task Manager', imageUrl: img13, category: 'UI/UX' },
+  { id: 10, title: 'Tawtheq', imageUrl: img10, category: 'UI/UX' },
+  { id: 11, title: 'LumiCare', imageUrl: img7, category: 'UI/UX' },
+  { id: 12, title: 'VeloCart', imageUrl: img9, category: 'UI/UX' },
+  { id: 13, title: 'EduPulse', imageUrl: img8, category: 'UI/UX' },
+  { id: 14, title: 'Real State', imageUrl: img11, category: 'UI/UX' },
+  { id: 15, title: 'Weather Forecast', imageUrl: img15, category: 'UI/UX' }
+
 ];
 
-const Categories = ['Frontend', 'UI/UX'];
+const Categories = ['UI/UX' , 'Frontend'];
 
 const Projects = () => {
-  const [selectedCategory, setSelectedCategory] = useState('Frontend');
+  const [selectedCategory, setSelectedCategory] = useState('UI/UX');
   const [showAll, setShowAll] = useState(false);
   const projectsGridRef = useRef(null); 
-  const sectionRef = useRef(null); // Ref for the section to scroll to top
+  const sectionRef = useRef(null); 
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
