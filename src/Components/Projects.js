@@ -9,13 +9,13 @@ import img3 from './imgs/e learning.webp';
 import img4 from './imgs/Quiz.webp'; 
 import img5 from './imgs/medical.webp'; 
 import img6 from './imgs/alwalaa.webp'; 
-import img7 from './imgs/lumicare2.png'; 
-import img8 from './imgs/EduPlus.png'; 
+import img7 from './imgs/lumicare2.webp'; 
+import img8 from './imgs/EduPlus.webp'; 
 import img9 from './imgs/velocart.png'; 
 import img10 from './imgs/tawtheq.webp'; 
 import img11 from './imgs/real state .png'; 
-import img12 from './imgs/course dashboard.png'; 
-import img13 from './imgs/task manager.png'; 
+import img12 from './imgs/course dashboard.webp'; 
+import img13 from './imgs/task manager.webp'; 
 import img14 from './imgs/finicial.png'; 
 import img15 from './imgs/weather.png'; 
 
