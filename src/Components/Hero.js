@@ -44,13 +44,14 @@ const Hero = () => {
                 <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
               </Link>
               <a
-  href="/Fares's Resume.pdf" // Path to the PDF file in the public directory
+  href="/Fares's Resume.pdf"
   className="hero-button download"
   download
 >
   Download Resume{" "}
   <FontAwesomeIcon icon={faDownload} className="resume-icon" />
 </a>
+
 
             </div>
           </div>
